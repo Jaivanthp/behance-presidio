@@ -1,0 +1,420 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  color: #191919;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  color: #191919;
+  text-align: center;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  color: #191919;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  color: #191919;
+}
+
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  color: #191919;
+}
+
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  color: #191919;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px Arial;  
+}
+
+/*Header CSS*/
+header {
+  height: 53px;
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 23px;
+  border-bottom: 1px solid #dfdfdf;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px -1px rgba(70, 42, 42, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+header button {
+  width: 100px;
+  height: 33px;
+  border-radius: 10px;
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  border: 1px solid #dfdfdf;
+  background-color: transparent;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/* Header left side buttons CSS */
+header .left-nav {
+  display: flex;
+  align-items: center;
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  font-size: 16px;
+}
+
+header .left-nav img {
+  margin-right: 18px;
+  height: 15px;
+}
+
+header .right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Header right side buttons CSS */
+header .right-nav button {
+  width: 100px;
+  height: 33px;
+  border-radius: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  border: 1px solid #dfdfdf;
+  background-color: #4c3fff;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+header .right-nav a {
+  color: #000;
+}
+
+header .right-nav a i {
+  color: #000;
+}
+
+header .right-nav i {
+  margin-right: 15px;
+}
+
+/* Search bar and drop down section CSS */
+.user-input {
+  background-color: #fff;
+}
+
+.user-input .search-new {
+  background-color: #fff;
+  margin-top: 0;
+  padding: 24px 24px;
+  position: sticky;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-input .search-new .input-container {
+  position: relative;
+  display: flex;
+  flex: 4 1 60%;
+  margin-right: 20px;
+}
+
+.user-input .search-new .input-container input {
+  margin-right: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #000;
+  padding: 10px 0px 10px 30px;
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.user-input .search-new .input-container img {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  width: 17px;
+  height: 17px;
+  transform: translate(-10%, -25%);
+}
+
+/* Content div CSS */
+.content-container {
+  height: max-content;
+  margin: 26px;
+  width: auto;
+}
+
+.content-container h2 {
+  font-size: 18px;
+}
+
+.content-container .project-wrapper {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.content-container .project-wrapper .projects {
+  margin-top: 30px;
+  height: 260px;
+  width: 390px;
+  border-radius: 6px 6px 0px 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.content-container .project-wrapper .projects .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 220px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.content-container .project-wrapper .projects .tag {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content-container .project-wrapper .projects:hover .tag {
+  opacity: 1;
+}
+
+.content-container .project-wrapper .projects img {
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content-container .project-wrapper .projects:hover img {
+  opacity: 0.6;
+}
+
+.content-container .project-wrapper .projects:hover .tag .ribbon img {
+  opacity: 1;
+}
+
+.content-container .project-wrapper .projects .ribbon {
+  position: absolute;
+  right: -10rem;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.content-container .project-wrapper .projects .ribbon img {
+  height: 60px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 60px) {
+  .content-container .project-wrapper .projects .ribbon {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+}
+
+
+.content-container .project-wrapper .projects .ribbon:hover {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.content-container .project-wrapper .projects-info {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 2px;
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+}
+
+.content-container .project-wrapper .projects-info .user {
+  display: flex;
+}
+
+.content-container .project-wrapper .projects-info .user img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.content-container .project-wrapper .projects-info .user a {
+  text-decoration: none;
+  color: #191919;
+}
+
+.content-container .project-wrapper .projects-info .user p {
+  font-size: 13px;
+}
+
+.content-container .project-wrapper .projects-info .photo-stats {
+  display: flex;
+  font-size: 12px;
+  color: #696969;
+}
+
+.content-container .project-wrapper .projects-info .photo-stats p {
+  margin-right: 10px;
+}
+
+.content-container .project-wrapper .projects-info .photo-stats p .fas {
+  padding-right: 4px;
+}
+
+/* Like Button */
+.choices {
+  background-color: #F0F3F4;
+  padding: 1px 18px;
+  display: inline-block;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px solid #5D6D7E;
+  text-align: center;
+}
+
+.choices:hover {
+  background: #D0D3D4;
+}
+
+input:checked+label>.choices {
+  background-color: #a42828;
+  border-color: white;
+  color: white;
+}
+
+.photo-stats input{
+  display: none
+}
+input:checked+label>.choices {
+  background-color: #a42828 !important;
+  color: white !important;
+  border-color: rgb(223, 210, 210) !important;
+}
+
+.views {
+  height: 25px;
+  width: 70px;
+  border-radius: 12px;
+  border: 2px solid #000000;
+  background-color: #000000;
+  color: white;
+  margin-top: 2px;
+  margin-left: 8px;
+}
+
+.user-input select {
+  display: flex;
+  right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  appearance: none;
+  border: 5px;
+  border-color: #4c3fff;
+  outline: 0;
+  font: 15px;
+
+  height: 40px;
+  width: 150px;
+  padding: 2px 2px 2px 6px;
+  color: rgb(51, 72, 211);
+  border-radius: 0.25em;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  &::-ms-expand {
+    display: none;
+  }
+  /* Remove focus outline */
+  &:focus {
+    outline: none;
+  }
+  /* <option> colors */
+  option {
+    color: inherit;
+    background-color: var(--option-bg);
+  }
+}
+
+footer {
+  display: flex;
+  background: #1d1b1b;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+}
+footer .footer_text {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
